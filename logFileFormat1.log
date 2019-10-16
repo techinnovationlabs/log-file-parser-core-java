@@ -1,0 +1,76 @@
+08:49:34.158 [ClusterSystem-akka.actor.default-dispatcher-10] INFO  s.f.p.u.s.cluster.ClusterListener [] - FlowManagerRemoved event received, flowId: FlowManager-testflow-4fa7ce8c-19c2-4ce2-ab1e-941e66e3fa97
+08:49:34.919 [http-nio-8080-exec-2] WARN  c.v.f.s.c.r.AbstractRpcInvocationHandler [] - Got an RPC for non-existent node: 2776
+09:00:55.177 [http-nio-8080-exec-2] ERROR com.vaadin.flow.component.UI [] - null
+java.lang.NullPointerException: null
+	at com.vaadin.flow.component.UI$1.handleError(UI.java:509)
+	at com.vaadin.flow.server.FutureAccess.handleError(FutureAccess.java:76)
+	at com.vaadin.flow.server.VaadinService.runPendingAccessTasks(VaadinService.java:1989)
+	at com.vaadin.flow.server.VaadinSession.unlock(VaadinSession.java:648)
+	at com.vaadin.flow.server.VaadinService.requestEnd(VaadinService.java:1479)
+	at com.vaadin.flow.server.VaadinService.handleRequest(VaadinService.java:1554)
+	at com.vaadin.flow.server.VaadinServlet.service(VaadinServlet.java:246)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at saleshero.flow.platform.ui.config.vaadin_shiro.FixedVaadinNavigationRolesAuthorizationFilter.executeChain(FixedVaadinNavigationRolesAuthorizationFilter.java:94)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at saleshero.flow.platform.security.shiro.CorsFilter.doFilter(CorsFilter.java:90)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:798)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:808)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+09:01:01.200 [http-nio-8080-exec-3] WARN  s.f.p.s.s.c.CasAuthenticationFilter [] - Failed to execute Health Check request to http://localhost:8088/hero_console/api/cas/ping. CAS flow will be skipped.
+09:16:51.756 [http-nio-8080-exec-7] WARN  s.f.p.s.s.c.CasAuthenticationFilter [] - Failed to execute Health Check request to http://localhost:8088/hero_console/api/cas/ping. CAS flow will be skipped.
+09:27:04.108 [http-nio-8080-exec-8] WARN  s.f.p.s.s.c.CasAuthenticationFilter [] - Failed to execute Health Check request to http://localhost:8088/hero_console/api/cas/ping. CAS flow will be skipped.
+13:57:57.861 [ClusterSystem-akka.actor.default-dispatcher-5] ERROR a.m.c.b.i.HttpContactPointBootstrap [] - Overdue of probing-failure-timeout, stop probing, signaling that it's failed
+13:57:57.862 [ClusterSystem-akka.actor.default-dispatcher-5] INFO  a.m.c.b.i.BootstrapCoordinator [] - Received signal that probing has failed, scheduling contact point probing again
+13:57:58.510 [ClusterSystem-akka.actor.default-dispatcher-11] INFO  a.m.c.b.LowestAddressJoinDecider [] - Discovered [2] contact points, confirmed [1], which is less than the required [2], retrying
+13:57:58.861 [ClusterSystem-akka.actor.default-dispatcher-12] INFO  a.m.c.b.c.HttpClusterBootstrapRoutes [] - Bootstrap request from 10.1.2.135:53944: Contact Point returning 0 seed-nodes ([TreeSet()])
+13:57:58.863 [ClusterSystem-akka.actor.default-dispatcher-12] INFO  a.m.c.b.i.BootstrapCoordinator [] - Contact point [akka://ClusterSystem@10.1.2.135:2551] returned [0] seed-nodes []
+13:57:59.080 [ClusterSystem-akka.actor.default-dispatcher-12] INFO  a.m.c.b.i.BootstrapCoordinator [] - Looking up [Lookup(hero-flow-k8,None,Some(tcp))]
+13:57:59.081 [ClusterSystem-akka.actor.default-dispatcher-12] INFO  a.d.k.KubernetesApiServiceDiscovery [] - Querying for pods with label selector: [app=hero-flow-k8]. Namespace: [hero-flow]. Port: [None]
+13:57:59.089 [ClusterSystem-akka.actor.default-dispatcher-11] INFO  a.m.c.b.i.BootstrapCoordinator [] - Located service members based on: [Lookup(hero-flow-k8,None,Some(tcp))]: [ResolvedTarget(10-1-2-136.hero-flow.pod.cluster.local,Some(8080),Some(/10.1.2.136)), ResolvedTarget(10-1-2-136.hero-flow.pod.cluster.local,Some(2551),Some(/10.1.2.136)), ResolvedTarget(10-1-2-136.hero-flow.pod.cluster.local,Some(8558),Some(/10.1.2.136)), ResolvedTarget(10-1-2-135.hero-flow.pod.cluster.local,Some(2551),Some(/10.1.2.135)), ResolvedTarget(10-1-2-135.hero-flow.pod.cluster.local,Some(8558),Some(/10.1.2.135))], filtered to [ResolvedTarget(10-1-2-135.hero-flow.pod.cluster.local,Some(8558),Some(/10.1.2.135)), ResolvedTarget(10-1-2-136.hero-flow.pod.cluster.local,Some(8558),Some(/10.1.2.136))]
+13:57:59.092 [ClusterSystem-akka.actor.default-dispatcher-11] WARN  a.m.c.b.i.HttpContactPointBootstrap [] - Probing [http://10-1-2-136.hero-flow.pod.cluster.local:8558/bootstrap/seed-nodes] failed due to: Exceeded configured max-open-requests value of [32]. This means that the request queue of this pool (HostConnectionPoolSetup(10-1-2-136.hero-flow.pod.cluster.local,8558,ConnectionPoolSetup(ConnectionPoolSettings(4,0,5,32,1,Duration.Inf,100 milliseconds,2 minutes,30 seconds,ClientConnectionSettings(Some(User-Agent: akka-http/10.1.8),10 seconds,1 minute,512,None,WebSocketSettings(<function0>,ping,Duration.Inf,akka.http.impl.settings.WebSocketSettingsImpl$$$Lambda$822/1979586073@60153e61),List(),ParserSettings(2048,16,64,64,8192,64,8388608,8388608,256,1048576,Strict,RFC6265,true,Set(),Full,Error,Map(If-Range -> 0, If-Modified-Since -> 0, If-Unmodified-Since -> 0, default -> 12, Content-MD5 -> 0, Date -> 0, If-Match -> 0, If-None-Match -> 0, User-Agent -> 32),false,true,akka.util.ConstantFun$$$Lambda$802/1776180205@597e6fef,akka.util.ConstantFun$$$Lambda$802/1776180205@597e6fef,akka.util.ConstantFun$$$Lambda$803/1963943166@10d1a497),None,TCPTransport),New,1 second),akka.http.scaladsl.HttpConnectionContext$@2e1db4b7,akka.event.MarkerLoggingAdapter@4beea85c))) has completely filled up because the pool currently does not process requests fast enough to handle the incoming request load. Please retry the request later. See http://doc.akka.io/docs/akka-http/current/scala/http/client-side/pool-overflow.html for more information.
+13:57:59.500 [ClusterSystem-akka.actor.default-dispatcher-5] INFO  a.m.c.b.LowestAddressJoinDecider [] - Discovered [2] contact points, confirmed [1], which is less than the required [2], retrying
+13:57:59.904 [ClusterSystem-akka.actor.default-dispatcher-12] INFO  a.m.c.b.c.HttpClusterBootstrapRoutes [] - Bootstrap request from 10.1.2.135:53944: Contact Point returning 0 seed-nodes ([TreeSet()])
+13:57:59.908 [ClusterSystem-akka.actor.default-dispatcher-12] INFO  a.m.c.b.i.BootstrapCoordinator [] - Contact point [akka://ClusterSystem@10.1.2.135:2551] returned [0] seed-nodes []
+13:58:00.160 [ClusterSystem-akka.actor.default-dispatcher-4] WARN  a.m.c.b.i.HttpContactPointBootstrap [] - Probing [http://10-1-2-136.hero-flow.pod.cluster.local:8558/bootstrap/seed-nodes] failed due to: Exceeded configured max-open-requests value of [32]. This means that the request queue of this pool (HostConnectionPoolSetup(10-1-2-136.hero-flow.pod.cluster.local,8558,ConnectionPoolSetup(ConnectionPoolSettings(4,0,5,32,1,Duration.Inf,100 milliseconds,2 minutes,30 seconds,ClientConnectionSettings(Some(User-Agent: akka-http/10.1.8),10 seconds,1 minute,512,None,WebSocketSettings(<function0>,ping,Duration.Inf,akka.http.impl.settings.WebSocketSettingsImpl$$$Lambda$822/1979586073@60153e61),List(),ParserSettings(2048,16,64,64,8192,64,8388608,8388608,256,1048576,Strict,RFC6265,true,Set(),Full,Error,Map(If-Range -> 0, If-Modified-Since -> 0, If-Unmodified-Since -> 0, default -> 12, Content-MD5 -> 0, Date -> 0, If-Match -> 0, If-None-Match -> 0, User-Agent -> 32),false,true,akka.util.ConstantFun$$$Lambda$802/1776180205@597e6fef,akka.util.ConstantFun$$$Lambda$802/1776180205@597e6fef,akka.util.ConstantFun$$$Lambda$803/1963943166@10d1a497),None,TCPTransport),New,1 second),akka.http.scaladsl.HttpConnectionContext$@2e1db4b7,akka.event.MarkerLoggingAdapter@4beea85c))) has completely filled up because the pool currently does not process requests fast enough to handle the incoming request load. Please retry the request later. 
